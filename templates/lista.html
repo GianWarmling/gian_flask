@@ -1,0 +1,31 @@
+{%extends 'template.html'%}
+{%block conteudo%}
+
+    <!--Inicio da tabela-->
+    <table class="table table-dark">
+        <thead>    
+            <tr>     
+                <th scope="col">Nome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Altura</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>          <!--inicio do corpo da tabela-->
+            <tr>
+                {% for pessoa in pessoas %}
+                <td>{{pessoa.nome}}</td>
+                <td>{{pessoa.idade}}</td>
+                <td>{{pessoa.altura}}</td>
+
+                <td>
+                    <a href="{{ url_for('editar', id=pessoa.id ) }}">Editar</a>
+                    <a href="{{ url_for('deletar', id=pessoa.id ) }}">Deletar</a>
+                </td>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{%endblock%}

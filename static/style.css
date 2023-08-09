@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(251, 201, 139);
+}
+
+header{
+    background-color: #03062d;
+    margin-top: 20px;
+}
+
+table{
+    margin-top: 50px;
+}
+
+h1  {
+    color: #03062d;
+    text-align: center;
+    margin: 20px;
+}
+
+footer{
+    color: #03062d;
+    text-align: center;
+    margin-top: 50px;
+}
+
+ul{
+    color: white;
+    list-style: none;
+}
+
+a:link, a:visited {
+    background-color: #4d4779;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    display: inline-block;
+  }
